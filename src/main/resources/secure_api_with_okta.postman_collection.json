@@ -29,12 +29,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "vbFdu7Mwlzvsho7qXWuhtW5LdTlyLzYzxvI7yMTo",
+							"value": "",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "0oa72lruwszzz48jU5d7",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -70,12 +70,10 @@
 					]
 				},
 				"url": {
-					"raw": "https://dev-96351051.okta.com/oauth2/default/v1/token",
+					"raw": "https://${yourDomainId}/oauth2/default/v1/token",
 					"protocol": "https",
 					"host": [
-						"dev-96351051",
-						"okta",
-						"com"
+						"${yourDomainId}"
 					],
 					"path": [
 						"oauth2",
