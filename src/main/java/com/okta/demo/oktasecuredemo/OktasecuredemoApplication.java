@@ -15,7 +15,18 @@ public class OktasecuredemoApplication {
 		SpringApplication.run(OktasecuredemoApplication.class, args);
 	}
 
-	@GetMapping("api/users")
+	/*
+	 Free access
+	 */
+	@GetMapping("/api/home")
+	public String home() {
+		return "Hello home";
+	}
+
+	/*
+	Unauthorized access
+	 */
+ 	@GetMapping("/api/users")
 	public List<String> getUsers() {
 		return List.of("Test", "Test1", "Test2");
 	}
